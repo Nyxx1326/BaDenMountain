@@ -1,0 +1,138 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #006400;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+form {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004d00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+/* Dark Mode */
+body.dark-mode {          
+    background-color: #121212; 
+    color: #e0e0e0;        
+}
+header.dark-mode {      
+    background-color: #1e1e1e; 
+}
+footer.dark-mode {      
+    background-color: #1e1e1e; 
+}
+nav ul li a.dark-mode { 
+    color: #e0e0e0;        
+}
+form.dark-mode {        
+    background-color: #1e1e1e; 
+}
+form input.dark-mode,
+form textarea.dark-mode,
+form select.dark-mode {
+    background-color: #2c2c2c; 
+    color: #e0e0e0;        
+}
+form button.dark-mode {
+    background-color: #333333; 
+    color: #e0e0e0;        
+}
+form button.dark-mode:hover {
+    background-color: #555555; 
+}
+/* Additional custom styles can be added below */
